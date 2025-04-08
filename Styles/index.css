@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    font-family: Open Sans, Arial;
+}
+.header {
+    width: 200px;
+    margin-top: 65px;
+    margin-left: 60px;
+    position: absolute;
+}
+.variable {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.illustration {
+    margin-top: 180px;
+    margin-left: 60px;
+    margin-right: 45px;
+}
+.variable header {
+    font-family: Poppins, Arial;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 23px;
+}
+.variable p {
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+.variable button {
+    padding: 12px 55px 12px 55px;
+    border: none;
+    border-radius: 30px;
+    font-family: Poppins, Arial;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+.variable button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.third-variable {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 50vh;
+}
+.socials {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-right: 80px;
+}
+.facebook,
+.twitter,
+.ig {
+    width: 35px;
+    fill: white;
+    cursor: pointer;
+    transition: fill 0.15s;
+}
+.facebook:hover,
+.twitter:hover,
+.ig:hover {
+    fill: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 0.15s;
+    }
+    .header {
+        width: 150px;
+        margin-top: 30px;
+    }
+    .illustration {
+        width: 300px;
+        margin-top: 130px;
+    }
+    .variable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-variable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .variable header {
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    .variable p {
+        font-size: 14px;
+        width: 265px;
+        text-align: center;
+    }
+    .variable span {
+        margin-left: 18px;
+    }
+    .variable button {
+        padding: 11px 85px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-left: 90px;
+    }
+    .facebook,
+    .twitter,
+    .ig {
+        width: 30px;
+    }
+    .third-variable {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
